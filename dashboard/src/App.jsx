@@ -1,35 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.jsx
+import { useEffect, useState } from "react";
+import { getAlgorithms, startSimulation, connectEvents } from "./api";
+import GanttChart from "./components/GanttChart";
+import MetricsChart from "./components/MetricsChart";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [algorithms, setAlgorithms] = useState([]);
+  const [selectedAlgo, setSelectedAlgo] = useState("");
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+    getAlgorithms().then(setAlgorithms);
+    const ws = connectEvents((evt) => setEvents((prev) => [...prev, evt]));
+    return () => ws.close();
+  }, []);
+
+  const handleStart = () => {
+    if (selectedAlgo) {
+      setEvents([]);
+      startSimulation(selectedAlgo);
+    }
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="p-4">
+      <h1 className="text-xl font-bold mb-2">AI-Augmented OS Scheduler Dashboard</h1>
 
-export default App
+      <select
+        value={selectedAlgo}
+        onChange={(e) => setSelectedAlgo(e.target.value)}
+        className="border px-2 py-1 mr-2"
+      >
+        <option value="">Select Algorithm</option>
+        {algorithms.map((a) => (
+          <option key={a} value={a}>
+            {a}
+          </option>
+        ))}
+      </select>
+      <button
+        onClick={handleStart}
+        className="bg-blue-500 text-white px-3 py-1 rounded"
+      >
+        Start Simulation
+      </button>
+
+      <div className="mt-6">
+        <GanttChart events={events} />
+        <MetricsChart events={events} />
+
+      </div>
+    </div>
+  );
+}
