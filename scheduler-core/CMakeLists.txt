@@ -1,34 +1,48 @@
-cmake_minimum_required(VERSION 3.15)
-project(AI_Augmented_Scheduler LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.20)
+project(AI_Augmented_OS_Scheduler LANGUAGES CXX)
 
+# Require C++17
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Adjust this if you put ONNX Runtime somewhere else
-include_directories(${CMAKE_SOURCE_DIR}/include)
-link_directories(${CMAKE_SOURCE_DIR}/lib)
-
-add_executable(test_predictor 
+# ============================
+# Add source files
+# ============================
+set(SRC_FILES
     src/main.cpp
     src/onnx_predictor.cpp
     src/process.cpp
+    src/scheduler.cpp
 )
 
-target_link_libraries(test_predictor PRIVATE onnxruntime)
-target_include_directories(test_predictor PRIVATE src)
+# ============================
+# Create executable
+# ============================
+add_executable(test_predictor ${SRC_FILES})
 
-set(ONNXRUNTIME_DIR "${CMAKE_SOURCE_DIR}/third_party/onnxruntime")
-
+# ============================
+# Include directories
+# ============================
 target_include_directories(test_predictor PRIVATE
-  ${ONNXRUNTIME_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${CMAKE_CURRENT_SOURCE_DIR}/third-party/onnxruntime/include  # ONNX Runtime headers
 )
 
-target_link_libraries(test_predictor
-  ${ONNXRUNTIME_DIR}/lib/onnxruntime.lib
+# ============================
+# Link ONNX Runtime
+# ============================
+target_link_libraries(test_predictor PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/third-party/onnxruntime/lib/onnxruntime.lib
 )
 
-add_custom_command(TARGET test_predictor POST_BUILD
-  COMMAND ${CMAKE_COMMAND} -E copy_if_different
-    ${ONNXRUNTIME_DIR}/bin/onnxruntime.dll
-    $<TARGET_FILE_DIR:test_predictor>
+# ============================
+# Preprocessor definitions
+# ============================
+add_definitions(-D_CRT_SECURE_NO_WARNINGS)
+
+# ============================
+# Optional: output directory
+# ============================
+set_target_properties(test_predictor PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin
 )

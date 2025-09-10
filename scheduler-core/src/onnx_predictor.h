@@ -1,21 +1,18 @@
-// onnx_predictor.h
 #pragma once
+
 #include <onnxruntime_cxx_api.h>
-#include <memory>
 #include <string>
 #include <vector>
 
-class ONNXPredictor {
+class OnnxPredictor {
 public:
-    explicit ONNXPredictor(const std::string& modelPath);
+    // Constructor loads the model
+    explicit OnnxPredictor(const std::string& modelPath);
+
+    // Run inference: features -> burst prediction
     float predictBurst(const std::vector<float>& features);
 
 private:
-    std::unique_ptr<Ort::Env> env;
-    std::unique_ptr<Ort::SessionOptions> sessionOptions;
-    std::unique_ptr<Ort::Session> session;
-    std::unique_ptr<Ort::AllocatorWithDefaultOptions> allocator;
-
-    std::string inputName;
-    std::string outputName;
+    Ort::Env env;       // ONNX Runtime environment
+    Ort::Session session{nullptr};  // The loaded ONNX model
 };

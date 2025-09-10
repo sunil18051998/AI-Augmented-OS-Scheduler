@@ -190,6 +190,30 @@ src\process.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_predictor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_predictor.dir\src\process.cpp.s
 .PHONY : src\process.cpp.s
 
+src\scheduler.obj: src\scheduler.cpp.obj
+.PHONY : src\scheduler.obj
+
+# target to build an object file
+src\scheduler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_predictor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_predictor.dir\src\scheduler.cpp.obj
+.PHONY : src\scheduler.cpp.obj
+
+src\scheduler.i: src\scheduler.cpp.i
+.PHONY : src\scheduler.i
+
+# target to preprocess a source file
+src\scheduler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_predictor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_predictor.dir\src\scheduler.cpp.i
+.PHONY : src\scheduler.cpp.i
+
+src\scheduler.s: src\scheduler.cpp.s
+.PHONY : src\scheduler.s
+
+# target to generate assembly for a file
+src\scheduler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_predictor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_predictor.dir\src\scheduler.cpp.s
+.PHONY : src\scheduler.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -208,6 +232,9 @@ help:
 	@echo ... src/process.obj
 	@echo ... src/process.i
 	@echo ... src/process.s
+	@echo ... src/scheduler.obj
+	@echo ... src/scheduler.i
+	@echo ... src/scheduler.s
 .PHONY : help
 
 

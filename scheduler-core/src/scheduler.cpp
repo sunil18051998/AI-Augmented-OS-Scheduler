@@ -4,9 +4,6 @@
 #include <algorithm>
 #include <iostream>
 #include <cmath>
-#include <nlohmann/json.hpp> // used only for pretty printing metrics (optional). If you don't want this dep, we output a simple JSON string manually.
-
-using json = nlohmann::json;
 
 Scheduler::Scheduler(std::shared_ptr<PredictorInterface> predictor) : predictor(predictor) {}
 

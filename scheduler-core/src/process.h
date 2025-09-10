@@ -1,22 +1,23 @@
-// process.h
 #pragma once
-#include <string>
+#include <vector>
 
 struct Process {
     int pid;
-    int arrivalTime;
-    int burstTime;
-    int remainingTime;
-    int priority;
+    double arrival_time;       // arrival time of the process
+    double burst;              // total burst time
+    double remaining;          // remaining burst time
+    int initial_priority;      // priority for MLFQ or other algorithms
 
-    int startTime;
-    int finishTime;
-    int waitingTime;
-    int turnaroundTime;
+    double first_response_time; // first response time
+    double finish_time;         // finish time
 
-    Process(int pid, int arrival, int burst, int priority);
+    std::vector<double> features; // feature vector for predictor
 
-    void updateWaitingTime(int currentTime);
-    void markStart(int currentTime);
-    void markFinish(int currentTime);
+    // Constructor
+    Process(int pid_, double arrival, double burst_, int priority);
+
+    // Methods
+    void markStart(double currentTime);
+    void markFinish(double currentTime);
+    void updateRemaining(double time);
 };
