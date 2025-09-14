@@ -1,21 +1,22 @@
-
 #include "onnx_predictor.h"
 #include <iostream>
 #include <vector>
 
 int main() {
+    std::cout << "[DEBUG] Program started\n";
+
     try {
-        // Path to your exported ONNX model (adjust if needed)
-        std::string model_path = "../ml-predictor/burst_model.onnx";
+        std::string model_path = "../../ml-predictor/burst_model.onnx";
+        std::cout << "[DEBUG] Model path: " << model_path << "\n";
 
-        // Initialize predictor
         OnnxPredictor predictor(model_path);
+        std::cout << "[DEBUG] Predictor initialized\n";
 
-        // Example features: [arrival, priority, io_wait, prev_burst]
         std::vector<float> features = {100.0f, 2.0f, 15.0f, 7.0f};
+        std::cout << "[DEBUG] Features ready\n";
 
-        // Run inference
         float prediction = predictor.predictBurst(features);
+        std::cout << "[DEBUG] Prediction done\n";
 
         std::cout << "Predicted burst time: " << prediction << std::endl;
     }
@@ -24,5 +25,6 @@ int main() {
         return 1;
     }
 
+    std::cout << "[DEBUG] Program exiting normally\n";
     return 0;
 }

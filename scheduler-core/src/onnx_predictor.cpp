@@ -1,38 +1,166 @@
+// #include "onnx_predictor.h"
+// #include <iostream>
+// #include <stdexcept>
+
+// OnnxPredictor::OnnxPredictor(const std::string& modelPath)
+//     : env(ORT_LOGGING_LEVEL_WARNING, "onnx_predictor")
+// {
+//     // Configure session options
+//     Ort::SessionOptions session_options;
+//     session_options.SetIntraOpNumThreads(1);
+//     session_options.SetGraphOptimizationLevel(GraphOptimizationLevel::ORT_ENABLE_ALL);
+
+//     // Convert modelPath to wide string (needed on Windows)
+//     std::wstring wide_model_path(modelPath.begin(), modelPath.end());
+
+//     // Load model
+//     session = Ort::Session(env, wide_model_path.c_str(), session_options);
+// }
+
+// float OnnxPredictor::predictBurst(const std::vector<float>& features) {
+//     std::cout << "[DEBUG] predictBurst() called, features size = " << features.size() << "\n";
+//     if (features.empty()) {
+//         throw std::invalid_argument("Input features cannot be empty");
+//     }
+
+//     // Create allocator and memory info
+//     Ort::AllocatorWithDefaultOptions allocator;
+//     Ort::MemoryInfo memory_info = Ort::MemoryInfo::CreateCpu(
+//         OrtArenaAllocator, OrtMemTypeDefault);
+
+//     // Prepare input tensor shape: (1, feature_count)
+//     std::vector<int64_t> input_shape = {1, static_cast<int64_t>(features.size())};
+
+//     // Create input tensor
+//     Ort::Value input_tensor = Ort::Value::CreateTensor<float>(
+//         memory_info,
+//         const_cast<float*>(features.data()), // mutable pointer
+//         features.size(),
+//         input_shape.data(),
+//         input_shape.size()
+//     );
+
+//     // Get input/output names
+//     // char* input_name = session.GetInputNameAllocated(0, allocator);
+//     // char* output_name = session.GetOutputNameAllocated(0, allocator);
+
+//     // const char* input_names[] = { input_name };
+//     // const char* output_names[] = { output_name };
+
+//     Ort::AllocatedStringPtr input_name = session.GetInputNameAllocated(0, allocator);
+// Ort::AllocatedStringPtr output_name = session.GetOutputNameAllocated(0, allocator);
+
+// const char* input_names[] = { input_name.get() };
+// const char* output_names[] = { output_name.get() };
+
+//     // Run inference
+//     auto output_tensors = session.Run(
+//         Ort::RunOptions{nullptr},
+//         input_names, &input_tensor, 1,
+//         output_names, 1
+//     );
+
+//     // Get output tensor data
+//     float* output_data = output_tensors.front().GetTensorMutableData<float>();
+//     float result = output_data[0];
+
+//     // Free allocated names
+//     // allocator.Free(input_name);
+//     // allocator.Free(output_name);
+
+//     allocator.Free(input_name.get());
+// allocator.Free(output_name.get());
+
+//     return result;
+// }
+
+
+
+#include "onnx_predictor.h"
 #include <iostream>
-#include <vector>
-#include <onnxruntime_cxx_api.h>
+#include <locale>
+#include <codecvt>
 
-int main() {
-    // Initialize ONNX Runtime environment
-    Ort::Env env(ORT_LOGGING_LEVEL_WARNING, "onnx_demo");
+OnnxPredictor::OnnxPredictor(const std::string& modelPath)
+    : env(ORT_LOGGING_LEVEL_WARNING, "onnx_predictor")
+{
+    // Convert std::string -> std::wstring (UTF-8 to UTF-16)
+    std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;
+    std::wstring wide_model_path = converter.from_bytes(modelPath);
 
-    // Create default allocator
-    Ort::AllocatorWithDefaultOptions allocator;
+    Ort::SessionOptions session_options;
+    session = Ort::Session(env, wide_model_path.c_str(), session_options);
 
-    // Example input data
-    std::vector<float> input_data = {1.0f, 2.0f, 3.0f, 4.0f};
-    std::vector<int64_t> input_shape = {2, 2}; // 2x2 tensor
+    std::cout << "[DEBUG] OnnxPredictor constructor: model loaded successfully\n";
+}
 
-    // Create CPU memory info
-    Ort::MemoryInfo memory_info = Ort::MemoryInfo::CreateCpu(
-        OrtArenaAllocator, OrtMemTypeDefault
-    );
 
-    // Create input tensor
-    Ort::Value input_tensor = Ort::Value::CreateTensor<float>(
-        memory_info,            // OrtMemoryInfo*
-        input_data.data(),      // pointer to your data
-        input_data.size(),      // number of elements
-        input_shape.data(),     // tensor shape
-        input_shape.size()      // number of dimensions
-    );
+float OnnxPredictor::predictBurst(const std::vector<float>& features) {
+    std::cout << "[DEBUG] predictBurst() called, features size = " << features.size() << "\n";
 
-    // Just a test print to confirm shape
-    std::cout << "Tensor created with shape: ";
-    for (auto dim : input_shape) {
-        std::cout << dim << " ";
+    try {
+        Ort::AllocatorWithDefaultOptions allocator;
+
+        // --- Input Names ---
+        size_t num_input_nodes = session.GetInputCount();
+        std::cout << "[DEBUG] Num input nodes: " << num_input_nodes << "\n";
+
+        Ort::AllocatedStringPtr input_name_alloc =
+            session.GetInputNameAllocated(0, allocator);
+        const char* input_name = input_name_alloc.get();
+        std::cout << "[DEBUG] Input name: " << input_name << "\n";
+
+        // --- Prepare Input Tensor ---
+        std::vector<int64_t> input_shape = {1, static_cast<int64_t>(features.size())};
+        Ort::MemoryInfo memory_info =
+            Ort::MemoryInfo::CreateCpu(OrtArenaAllocator, OrtMemTypeDefault);
+
+        Ort::Value input_tensor = Ort::Value::CreateTensor<float>(
+            memory_info,
+            const_cast<float*>(features.data()), // non-const pointer required
+            features.size(),
+            input_shape.data(),
+            input_shape.size()
+        );
+
+        // --- Output Names (RAII Safe) ---
+        size_t num_outputs = session.GetOutputCount();
+        std::vector<Ort::AllocatedStringPtr> output_name_allocs;
+        std::vector<const char*> output_names;
+        output_name_allocs.reserve(num_outputs);
+        output_names.reserve(num_outputs);
+
+        for (size_t i = 0; i < num_outputs; i++) {
+            output_name_allocs.push_back(session.GetOutputNameAllocated(i, allocator));
+            output_names.push_back(output_name_allocs.back().get());
+        }
+
+        // --- Run Inference ---
+        auto output_tensors = session.Run(
+            Ort::RunOptions{nullptr},
+            &input_name,
+            &input_tensor,
+            1,
+            output_names.data(),
+            output_names.size()
+        );
+
+        std::cout << "[DEBUG] Inference completed, got "
+                  << output_tensors.size() << " outputs\n";
+
+        // --- Extract Result ---
+        float* float_array = output_tensors.front().GetTensorMutableData<float>();
+        float prediction = float_array[0];
+
+        std::cout << "[DEBUG] Prediction value: " << prediction << "\n";
+        return prediction;
     }
-    std::cout << std::endl;
-
-    return 0;
+    catch (const Ort::Exception& e) {
+        std::cerr << "[ERROR] ONNX Runtime Exception: " << e.what() << "\n";
+        throw;
+    }
+    catch (const std::exception& e) {
+        std::cerr << "[ERROR] Standard Exception: " << e.what() << "\n";
+        throw;
+    }
 }
