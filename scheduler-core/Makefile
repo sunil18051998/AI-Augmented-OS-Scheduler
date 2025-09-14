@@ -118,6 +118,30 @@ test_predictor\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_predictor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_predictor.dir\build
 .PHONY : test_predictor\fast
 
+src\csv_loader.obj: src\csv_loader.cpp.obj
+.PHONY : src\csv_loader.obj
+
+# target to build an object file
+src\csv_loader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_predictor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_predictor.dir\src\csv_loader.cpp.obj
+.PHONY : src\csv_loader.cpp.obj
+
+src\csv_loader.i: src\csv_loader.cpp.i
+.PHONY : src\csv_loader.i
+
+# target to preprocess a source file
+src\csv_loader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_predictor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_predictor.dir\src\csv_loader.cpp.i
+.PHONY : src\csv_loader.cpp.i
+
+src\csv_loader.s: src\csv_loader.cpp.s
+.PHONY : src\csv_loader.s
+
+# target to generate assembly for a file
+src\csv_loader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_predictor.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\test_predictor.dir\src\csv_loader.cpp.s
+.PHONY : src\csv_loader.cpp.s
+
 src\main.obj: src\main.cpp.obj
 .PHONY : src\main.obj
 
@@ -223,6 +247,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... test_predictor
+	@echo ... src/csv_loader.obj
+	@echo ... src/csv_loader.i
+	@echo ... src/csv_loader.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

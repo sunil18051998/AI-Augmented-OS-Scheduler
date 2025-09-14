@@ -141,12 +141,33 @@ CMakeFiles\test_predictor.dir\src\scheduler.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\test_predictor.dir\src\scheduler.cpp.s /c C:\Users\pc\MyProjects\AI-Augmented-OS-Scheduler\scheduler-core\src\scheduler.cpp
 <<
 
+CMakeFiles\test_predictor.dir\src\csv_loader.cpp.obj: CMakeFiles\test_predictor.dir\flags.make
+CMakeFiles\test_predictor.dir\src\csv_loader.cpp.obj: src\csv_loader.cpp
+CMakeFiles\test_predictor.dir\src\csv_loader.cpp.obj: CMakeFiles\test_predictor.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\pc\MyProjects\AI-Augmented-OS-Scheduler\scheduler-core\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test_predictor.dir/src/csv_loader.cpp.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\test_predictor.dir\src\csv_loader.cpp.obj.d --working-dir=C:\Users\pc\MyProjects\AI-Augmented-OS-Scheduler\scheduler-core --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~3\2022\COMMUN~1\VC\Tools\MSVC\1444~1.352\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\test_predictor.dir\src\csv_loader.cpp.obj /FdCMakeFiles\test_predictor.dir\ /FS -c C:\Users\pc\MyProjects\AI-Augmented-OS-Scheduler\scheduler-core\src\csv_loader.cpp
+<<
+
+CMakeFiles\test_predictor.dir\src\csv_loader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_predictor.dir/src/csv_loader.cpp.i"
+	C:\PROGRA~1\MICROS~3\2022\COMMUN~1\VC\Tools\MSVC\1444~1.352\bin\Hostx64\x64\cl.exe > CMakeFiles\test_predictor.dir\src\csv_loader.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\pc\MyProjects\AI-Augmented-OS-Scheduler\scheduler-core\src\csv_loader.cpp
+<<
+
+CMakeFiles\test_predictor.dir\src\csv_loader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_predictor.dir/src/csv_loader.cpp.s"
+	C:\PROGRA~1\MICROS~3\2022\COMMUN~1\VC\Tools\MSVC\1444~1.352\bin\Hostx64\x64\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\test_predictor.dir\src\csv_loader.cpp.s /c C:\Users\pc\MyProjects\AI-Augmented-OS-Scheduler\scheduler-core\src\csv_loader.cpp
+<<
+
 # Object files for target test_predictor
 test_predictor_OBJECTS = \
 "CMakeFiles\test_predictor.dir\src\main.cpp.obj" \
 "CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj" \
 "CMakeFiles\test_predictor.dir\src\process.cpp.obj" \
-"CMakeFiles\test_predictor.dir\src\scheduler.cpp.obj"
+"CMakeFiles\test_predictor.dir\src\scheduler.cpp.obj" \
+"CMakeFiles\test_predictor.dir\src\csv_loader.cpp.obj"
 
 # External object files for target test_predictor
 test_predictor_EXTERNAL_OBJECTS =
@@ -155,10 +176,11 @@ bin\test_predictor.exe: CMakeFiles\test_predictor.dir\src\main.cpp.obj
 bin\test_predictor.exe: CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj
 bin\test_predictor.exe: CMakeFiles\test_predictor.dir\src\process.cpp.obj
 bin\test_predictor.exe: CMakeFiles\test_predictor.dir\src\scheduler.cpp.obj
+bin\test_predictor.exe: CMakeFiles\test_predictor.dir\src\csv_loader.cpp.obj
 bin\test_predictor.exe: CMakeFiles\test_predictor.dir\build.make
 bin\test_predictor.exe: third-party\onnxruntime\lib\onnxruntime.lib
 bin\test_predictor.exe: CMakeFiles\test_predictor.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\pc\MyProjects\AI-Augmented-OS-Scheduler\scheduler-core\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable bin\test_predictor.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\pc\MyProjects\AI-Augmented-OS-Scheduler\scheduler-core\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable bin\test_predictor.exe"
 	"C:\Program Files\CMake\bin\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\test_predictor.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests -- C:\PROGRA~1\MICROS~3\2022\COMMUN~1\VC\Tools\MSVC\1444~1.352\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\test_predictor.dir\objects1.rsp @<<
  /out:bin\test_predictor.exe /implib:test_predictor.lib /pdb:C:\Users\pc\MyProjects\AI-Augmented-OS-Scheduler\scheduler-core\bin\test_predictor.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console  third-party\onnxruntime\lib\onnxruntime.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

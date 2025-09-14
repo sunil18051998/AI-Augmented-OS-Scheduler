@@ -2,8 +2,8 @@
 
 // Constructor
 Process::Process(int pid_, double arrival, double burst_, int priority)
-    : pid(pid_), arrival_time(arrival), burst(burst_), remaining(burst_),
-      initial_priority(priority), first_response_time(-1.0), finish_time(-1.0),
+    : pid(pid_), arrival_time(arrival), burst_time(burst_), remaining(burst_),
+      priority(priority), first_response_time(-1.0), finish_time(-1.0),
       features() // empty vector by default
 {}
 

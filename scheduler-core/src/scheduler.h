@@ -1,39 +1,34 @@
 #pragma once
-#include "process.h"
-#include "predictor.h"
 #include <vector>
-#include <memory>
 #include <string>
+#include "process.h"
 
-struct ScheduleEvent {
-    double time;
+struct GanttEvent {
     int pid;
-    double duration;
-    std::string queue; // e.g., "RR", "Q0", "ML_RR"
+    int start_time;
+    int duration;
 };
 
-struct Metrics {
-    double avg_turnaround = 0.0;
-    double avg_waiting = 0.0;
-    double avg_response = 0.0;
-    double cpu_utilization = 0.0;
-    int processed = 0;
-};
-
-enum class Algo {
-    RR,
-    MLFQ,
-    ML_RR
+struct SchedulerResult {
+    double avg_waiting_time;
+    double avg_turnaround_time;
+    double cpu_utilization;
+    double throughput;
+    int context_switches;
+    std::vector<GanttEvent> gantt_chart;  // timeline for frontend
 };
 
 class Scheduler {
 public:
-    Scheduler(std::shared_ptr<PredictorInterface> predictor);
-    // run simulation, events pushed into vector (in chronological order)
-    Metrics run(const std::vector<Process>& processes, Algo algo, double quantum, double mlfq_base_quantum, bool verbose, std::vector<ScheduleEvent>& events_out);
+    Scheduler(std::string algorithm, int time_quantum = 4);
+    SchedulerResult run(std::vector<Process>& processes);
 
 private:
-    std::shared_ptr<PredictorInterface> predictor;
+    std::string algo;
+    int time_quantum;
 
-    Metrics compute_metrics(const std::vector<Process>& procs, double total_time, double cpu_busy_time);
+    SchedulerResult runFCFS(std::vector<Process>& processes);
+    SchedulerResult runSJF(std::vector<Process>& processes);
+    SchedulerResult runRR(std::vector<Process>& processes);
+    SchedulerResult runMLFQ(std::vector<Process>& processes);
 };

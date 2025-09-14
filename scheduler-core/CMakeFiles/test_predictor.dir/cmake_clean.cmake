@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_predictor.dir/src/csv_loader.cpp.obj"
+  "CMakeFiles/test_predictor.dir/src/csv_loader.cpp.obj.d"
   "CMakeFiles/test_predictor.dir/src/main.cpp.obj"
   "CMakeFiles/test_predictor.dir/src/main.cpp.obj.d"
   "CMakeFiles/test_predictor.dir/src/onnx_predictor.cpp.obj"

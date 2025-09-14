@@ -13,6 +13,7 @@ set(SRC_FILES
     src/onnx_predictor.cpp
     src/process.cpp
     src/scheduler.cpp
+    src/csv_loader.cpp
 )
 
 # ============================

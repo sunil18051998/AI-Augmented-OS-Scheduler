@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import { WebSocketServer } from "ws";
-import { spawn } from "child_process";
+import { execFile } from "child_process";
 
 const app = express();
 const PORT = 5000;
@@ -24,36 +24,18 @@ app.get("/algorithms", (req, res) => {
 
 // Start simulation using C++ core
 app.post("/simulate", (req, res) => {
-  const { algorithm } = req.body;
-  console.log(`[BACKEND] Starting simulation with algorithm: ${algorithm}`);
-
-  // Spawn C++ core (binary must be built and available)
-  const coreProcess = spawn("../../scheduler-core/bin/test_predictor.exe", [], {
-    cwd: process.cwd(),
+  const { algorithm, dataset, quantum } = req.body;
+  const args = [algorithm, dataset];
+  if (quantum) args.push(String(quantum));
+  execFile("../bin/test_predictor.exe", args, (err, stdout, stderr) => {
+    if (err) return res.status(500).json({ error: stderr || err.message });
+    try {
+      const parsed = JSON.parse(stdout);
+      return res.json(parsed);
+    } catch (e) {
+      return res.status(500).json({ error: "Invalid JSON from core", raw: stdout });
+    }
   });
-
-  coreProcess.stdout.on("data", (data) => {
-    const message = data.toString().trim();
-    console.log(`[CORE OUTPUT] ${message}`);
-
-    // Example: send live events to frontend
-    wsClients.forEach((client) => {
-      client.send(JSON.stringify({ type: "core_log", message }));
-    });
-  });
-
-  coreProcess.stderr.on("data", (err) => {
-    console.error(`[CORE ERROR] ${err}`);
-  });
-
-  coreProcess.on("close", (code) => {
-    console.log(`[CORE EXIT] Process exited with code ${code}`);
-    wsClients.forEach((client) => {
-      client.send(JSON.stringify({ type: "simulation_done", code }));
-    });
-  });
-
-  res.json({ status: "simulation started", algorithm });
 });
 
 // Start HTTP server
