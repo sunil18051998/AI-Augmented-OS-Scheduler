@@ -1,4 +1,3 @@
-// src/components/MetricsChart.jsx
 import { useEffect, useState } from "react";
 import {
   LineChart,
@@ -14,21 +13,46 @@ export default function MetricsChart({ events }) {
   const [metrics, setMetrics] = useState([]);
 
   useEffect(() => {
-    if (!events.length) return;
+    if (!Array.isArray(events) || events.length === 0) return;
 
-    // Compute metrics dynamically as events stream in
+    // Flatten and parse core_log events
+    const flatEvents = [];
+
+    events.forEach((e) => {
+      if (e.type === "core_log" && typeof e.message === "string") {
+        try {
+          const parsed = JSON.parse(e.message); // parse JSON string
+          parsed.forEach((d) => {
+            const time = Number(d.time);
+            const duration = Number(d.duration);
+            if (
+              d.pid &&
+              Number.isFinite(time) &&
+              Number.isFinite(duration) &&
+              duration > 0
+            ) {
+              flatEvents.push({ pid: d.pid, time, duration });
+            }
+          });
+        } catch (err) {
+          console.warn("[MetricsChart] Failed to parse message:", e.message, err);
+        }
+      }
+    });
+
+    if (flatEvents.length === 0) {
+      console.warn("[MetricsChart] No valid events to compute metrics.");
+      return;
+    }
+
+    // Compute metrics
     const procFinishTimes = {};
     const procStartTimes = {};
     const procBursts = {};
 
-    events.forEach((e) => {
-      // track first start time
-      if (!(e.pid in procStartTimes)) {
-        procStartTimes[e.pid] = e.time;
-      }
-      // accumulate burst
+    flatEvents.forEach((e) => {
+      if (!(e.pid in procStartTimes)) procStartTimes[e.pid] = e.time;
       procBursts[e.pid] = (procBursts[e.pid] || 0) + e.duration;
-      // track last finish time
       procFinishTimes[e.pid] = e.time + e.duration;
     });
 
@@ -41,7 +65,7 @@ export default function MetricsChart({ events }) {
       return { pid, turnaround: tat, waiting: wt };
     });
 
-    // aggregate averages
+    // Aggregate averages
     const avgTat =
       newMetrics.reduce((s, m) => s + m.turnaround, 0) / newMetrics.length;
     const avgWt =
@@ -49,7 +73,7 @@ export default function MetricsChart({ events }) {
 
     // CPU utilization
     const totalFinish = Math.max(...Object.values(procFinishTimes));
-    const cpuBusy = events.reduce((s, e) => s + e.duration, 0);
+    const cpuBusy = flatEvents.reduce((s, e) => s + e.duration, 0);
     const cpuUtil = (cpuBusy / totalFinish) * 100;
 
     setMetrics([

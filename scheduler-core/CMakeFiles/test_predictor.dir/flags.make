@@ -4,7 +4,7 @@
 # compile CXX with C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/cl.exe
 CXX_DEFINES = -D_CRT_SECURE_NO_WARNINGS
 
-CXX_INCLUDES = -IC:\Users\pc\MyProjects\AI-Augmented-OS-Scheduler\scheduler-core\src -IC:\Users\pc\MyProjects\AI-Augmented-OS-Scheduler\scheduler-core\third-party\onnxruntime\include
+CXX_INCLUDES = -IC:\Users\pc\MyProjects\AI-Augmented-OS-Scheduler\scheduler-core\src -IC:\Users\pc\MyProjects\AI-Augmented-OS-Scheduler\scheduler-core\third-party\onnxruntime\include -IC:\Users\pc\MyProjects\AI-Augmented-OS-Scheduler\scheduler-core\third-party\rapidjson
 
 CXX_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd
 

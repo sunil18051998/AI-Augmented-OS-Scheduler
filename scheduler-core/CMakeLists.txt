@@ -26,6 +26,7 @@ add_executable(test_predictor ${SRC_FILES})
 target_include_directories(test_predictor PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/src
     ${CMAKE_CURRENT_SOURCE_DIR}/third-party/onnxruntime/include  # ONNX Runtime headers
+    ${CMAKE_CURRENT_SOURCE_DIR}/third-party/rapidjson/
 )
 
 # ============================

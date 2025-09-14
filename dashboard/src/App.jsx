@@ -12,7 +12,7 @@ export default function App() {
   useEffect(() => {
     getAlgorithms().then(setAlgorithms);
     const ws = connectEvents((evt) => setEvents((prev) => [...prev, evt]));
-    return () => ws.close();
+    //return () => ws.close();
   }, []);
 
   const handleStart = () => {
@@ -33,8 +33,8 @@ export default function App() {
       >
         <option value="">Select Algorithm</option>
         {algorithms.map((a) => (
-          <option key={a} value={a}>
-            {a}
+          <option key={a.id} value={a.name}>
+            {a.name}
           </option>
         ))}
       </select>

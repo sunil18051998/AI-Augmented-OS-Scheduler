@@ -144,3 +144,34 @@ C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.3520
 C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/include/clocale
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/locale.h
 C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/include/ostream
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/document.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/reader.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/allocators.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/rapidjson.h
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/inttypes.h
+C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/include/cassert
+C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/assert.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/internal/meta.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/stream.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/encodings.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/encodedstream.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/stream.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/memorystream.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/stream.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/internal/clzll.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/internal/stack.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/internal/swap.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/internal/strtod.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/internal/ieee754.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/internal/biginteger.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/internal/diyfp.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/internal/pow10.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/error/error.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/internal/strfunc.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/internal/../stream.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/writer.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/stream.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/internal/dtoa.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/internal/itoa.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/stringbuffer.h
+C:/Users/pc/MyProjects/AI-Augmented-OS-Scheduler/scheduler-core/third-party/rapidjson/stream.h

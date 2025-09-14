@@ -148,6 +148,192 @@ CMakeFiles\test_predictor.dir\src\main.cpp.obj: "C:\Program Files\Microsoft Visu
 CMakeFiles\test_predictor.dir\src\main.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\clocale"
 CMakeFiles\test_predictor.dir\src\main.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\locale.h"
 CMakeFiles\test_predictor.dir\src\main.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ostream"
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\document.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\reader.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\allocators.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\rapidjson.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h"
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cassert"
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h"
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\internal\meta.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\stream.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\encodings.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\encodedstream.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\stream.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\memorystream.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\stream.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\internal\clzll.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\internal\stack.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\internal\swap.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\internal\strtod.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\internal\ieee754.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\internal\biginteger.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\internal\diyfp.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\internal\pow10.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\error\error.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\internal\strfunc.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\internal\..\stream.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\writer.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\stream.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\internal\dtoa.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\internal\itoa.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\stringbuffer.h
+CMakeFiles\test_predictor.dir\src\main.cpp.obj: third-party\rapidjson\stream.h
+
+
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: src\onnx_predictor.cpp
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: src\onnx_predictor.h
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: third-party\onnxruntime\include\onnxruntime_cxx_api.h
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: third-party\onnxruntime\include\onnxruntime_c_api.h
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdbool.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdint.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\sal.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\concurrencysal.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vadefs.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdlib.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_malloc.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_search.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stddef.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdlib.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\limits.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\string.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memory.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_memcpy_s.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime_string.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_strict.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_undef.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\driverspecs.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\sdv_driverspecs.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: third-party\onnxruntime\include\onnxruntime_float16.h
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cmath"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\yvals.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\yvals_core.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xkeycheck.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\crtdbg.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime_new_debug.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime_new.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\crtdefs.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\use_ansi.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cstdlib"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\math.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_math.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xtr1common"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\intrin0.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\intrin0.inl.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cstring"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\limits"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cfloat"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\float.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\climits"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cwchar"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cstdio"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\wchar.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wconio.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wctype.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wdirect.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wio.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_share.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wprocess.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wtime.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\stat.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\sys\types.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\intrin.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\setjmp.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\immintrin.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\wmmintrin.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\nmmintrin.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\smmintrin.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\tmmintrin.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\pmmintrin.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\emmintrin.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmmintrin.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\mmintrin.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\malloc.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\zmmintrin.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ammintrin.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\array"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xutility"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_iter_core.hpp"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\utility"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\initializer_list"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cstddef"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\type_traits"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cstdint"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\memory"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\exception"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime_exception.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\eh.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_terminate.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iosfwd"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\typeinfo"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime_typeinfo.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\new"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xatomic.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdexcept"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xstring"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_sanitizer_annotate_container.hpp"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_string_view.hpp"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xpolymorphic_allocator.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\tuple"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\string"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cctype"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\ctype.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\list"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vector"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_bit_utils.hpp"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xbit_ops.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xnode_handle.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\variant"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xsmf_control.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: third-party\onnxruntime\include\onnxruntime_cxx_inline.h
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\algorithm"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_heap_algorithms.hpp"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_minmax.hpp"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\functional"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iterator"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\iostream"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\istream"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_ostream.hpp"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ios"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xlocnum"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\streambuf"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xiosbase"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\share.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\system_error"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_system_error_abi.hpp"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cerrno"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xcall_once.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xerrc.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\atomic"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xthreads.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_threads_core.hpp"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xtimec.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ctime"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\time.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xlocale"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xfacet"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xlocinfo"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\__msvc_xlocinfo_types.hpp"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\clocale"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\locale.h"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ostream"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\locale"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xlocbuf"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xlocmes"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xlocmon"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xloctime"
+CMakeFiles\test_predictor.dir\src\onnx_predictor.cpp.obj: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\codecvt"
 
 
 CMakeFiles\test_predictor.dir\src\process.cpp.obj: src\process.cpp
@@ -399,6 +585,8 @@ third-party\onnxruntime\include\onnxruntime_cxx_api.h:
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cfloat":
 
+third-party\rapidjson\internal\..\stream.h:
+
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\shared\specstrings_undef.h":
@@ -408,6 +596,8 @@ third-party\onnxruntime\include\onnxruntime_cxx_api.h:
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\stdbool.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wctype.h":
+
+"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xloctime":
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\concurrencysal.h":
 
@@ -433,6 +623,10 @@ third-party\onnxruntime\include\onnxruntime_cxx_api.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdlib.h":
 
+third-party\rapidjson\encodedstream.h:
+
+third-party\rapidjson\internal\meta.h:
+
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\limits.h":
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\yvals.h":
@@ -448,6 +642,8 @@ third-party\onnxruntime\include\onnxruntime_cxx_api.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\crtdbg.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\errno.h":
+
+third-party\rapidjson\internal\ieee754.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstring.h":
 
@@ -491,6 +687,8 @@ third-party\onnxruntime\include\onnxruntime_float16.h:
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\intrin0.h":
 
+third-party\rapidjson\internal\itoa.h:
+
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\float.h":
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cwchar":
@@ -502,6 +700,8 @@ third-party\onnxruntime\include\onnxruntime_float16.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\stdio.h":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_wstdio.h":
+
+third-party\rapidjson\internal\dtoa.h:
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\corecrt_stdio_config.h":
 
@@ -559,6 +759,8 @@ src\scheduler.cpp:
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cstddef":
 
+"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xlocmon":
+
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\type_traits":
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cstdint":
@@ -568,6 +770,8 @@ src\scheduler.cpp:
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\exception":
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\vcruntime_exception.h":
+
+third-party\rapidjson\reader.h:
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\eh.h":
 
@@ -625,6 +829,8 @@ src\scheduler.cpp:
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xsmf_control.h":
 
+third-party\rapidjson\internal\clzll.h:
+
 third-party\onnxruntime\include\onnxruntime_cxx_inline.h:
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\algorithm":
@@ -645,6 +851,8 @@ src\scheduler.h:
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xlocnum":
 
+third-party\rapidjson\writer.h:
+
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\streambuf":
 
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\share.h":
@@ -655,7 +863,11 @@ src\scheduler.h:
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xerrc.h":
 
+third-party\rapidjson\stringbuffer.h:
+
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xthreads.h":
+
+third-party\rapidjson\internal\pow10.h:
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xtimec.h":
 
@@ -674,6 +886,48 @@ src\scheduler.h:
 "C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\locale.h":
 
 "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\ostream":
+
+third-party\rapidjson\document.h:
+
+third-party\rapidjson\allocators.h:
+
+third-party\rapidjson\rapidjson.h:
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\inttypes.h":
+
+"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\cassert":
+
+"C:\Program Files (x86)\Windows Kits\10\include\10.0.26100.0\ucrt\assert.h":
+
+third-party\rapidjson\stream.h:
+
+third-party\rapidjson\encodings.h:
+
+third-party\rapidjson\memorystream.h:
+
+third-party\rapidjson\internal\biginteger.h:
+
+third-party\rapidjson\internal\stack.h:
+
+third-party\rapidjson\internal\swap.h:
+
+third-party\rapidjson\internal\strtod.h:
+
+third-party\rapidjson\internal\diyfp.h:
+
+third-party\rapidjson\error\error.h:
+
+third-party\rapidjson\internal\strfunc.h:
+
+src\onnx_predictor.cpp:
+
+"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\locale":
+
+"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xlocbuf":
+
+"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xlocmes":
+
+"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\codecvt":
 
 src\process.cpp:
 
